@@ -1,0 +1,118 @@
+/*-----------------------------------*/
+/* Circular Map Styling              */
+/*-----------------------------------*/
+
+.circular-map {
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.9); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+    z-index: 1000; 
+    transition: transform 0.2s ease; 
+}
+
+.circular-map:hover {
+    animation: bounce 0.5s ease; 
+}
+
+/* Keyframes for bounce animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); 
+    }
+    40% {
+        transform: translateY(-15px); 
+    }
+    60% {
+        transform: translateY(-8px); 
+    }
+}
+
+/*-----------------------------------*/
+/* Navbar Styling                    */
+/*-----------------------------------*/
+
+.navbar {
+    width: 100%;
+    background-color: #007BFF; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+}
+
+.nav-title {
+    font-size: 24px; 
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px; 
+}
+
+.nav-link {
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+.nav-link:hover {
+    color: #FFD700; 
+}
+
+/*-----------------------------------*/
+/* Responsive Styles                 */
+/*-----------------------------------*/
+
+@media (max-width: 768px) {
+
+    .circular-map {
+        width: 60px; 
+        height: 60px; 
+    }
+
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .nav-title {
+        font-size: 20px; 
+    }
+
+    .nav-links {
+        gap: 10px; 
+    }
+
+    .nav-link {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .circular-map {
+        width: 50px; 
+        height: 50px; 
+    }
+
+    .nav-title {
+        font-size: 18px; 
+    }
+
+    .nav-link {
+        font-size: 12px; 
+    }
+}

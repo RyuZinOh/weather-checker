@@ -1,0 +1,226 @@
+/*-----------------------------------*/
+/* Weather Container Styling         */
+/*-----------------------------------*/
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------*/
+/* Top Right Illustration Styling     */
+/*-----------------------------------*/
+
+.top-right-illustration {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    max-width: 50%;
+    height: auto;
+    z-index: 0;
+    pointer-events: none;
+}
+
+h1 {
+    margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+/*-----------------------------------*/
+/* Search Box Styling                */
+/*-----------------------------------*/
+
+.search-box {
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    width: 100%;
+}
+
+.search-input:focus {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/*-----------------------------------*/
+/* Unit Toggle Styling               */
+/*-----------------------------------*/
+
+.unit-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.unit-toggle label {
+    margin: 0 10px;
+}
+
+/*-----------------------------------*/
+/* Weather Cards Styling             */
+/*-----------------------------------*/
+
+.weather-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.weather-card {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+    flex: 1 1 200px;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.weather-card:hover {
+    transform: scale(1.05);
+}
+
+/*-----------------------------------*/
+/* Weather Detail Styling            */
+/*-----------------------------------*/
+
+.weather-detail {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    width: 80%;
+    max-width: 600px;
+}
+
+/*-----------------------------------*/
+/* Close Button Styling              */
+/*-----------------------------------*/
+
+.close-button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+.close-button:hover {
+    background-color: #e63939;
+}
+
+/*-----------------------------------*/
+/* Error Message Styling             */
+/*-----------------------------------*/
+
+.error-message {
+    color: red;
+    z-index: 1;
+    position: relative;
+}
+
+/*-----------------------------------*/
+/* Responsive Styling                */
+/*-----------------------------------*/
+
+@media (max-width: 768px) {
+    .top-right-illustration {
+        max-width: 30%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .unit-toggle {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-box {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .search-input {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .search-button {
+        width: 90%;
+    }
+
+    .weather-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weather-card {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-right-illustration {
+        max-width: 40%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
