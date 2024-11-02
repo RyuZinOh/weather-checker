@@ -66,5 +66,8 @@ Once the application is running, you can:
 
 If you would like to contribute to this project, feel free to fork the repository and submit a pull request. Contributions are welcome!
 
+### NOTE
+
+dynamic map is added but isnt connected to any of the component, u may combine and pull request, i can combine, this will benifit both of us :), untile then completed
 
 ---
