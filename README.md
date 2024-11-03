@@ -54,6 +54,10 @@ Welcome to the **Weather Checker** application! This project allows you to check
 
    Your application will be running on [http://localhost:3000](http://localhost:3000).
 
+5. **FOR DOCKER**
+`docker pull safallama/weathwer-app`
+`docker run -p 3000:3000 -e REACT_APP_WEATHER_API_KEY=your_api_key_here safallama/weather-app`
+
 ## Usage
 
 Once the application is running, you can:
@@ -69,5 +73,8 @@ If you would like to contribute to this project, feel free to fork the repositor
 ### NOTE
 
 dynamic map is added but isnt connected to any of the component, u may combine and pull request, i can combine, this will benifit both of us :), untile then completed
+
+
+
 
 ---
