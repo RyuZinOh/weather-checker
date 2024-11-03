@@ -55,8 +55,9 @@ Welcome to the **Weather Checker** application! This project allows you to check
    Your application will be running on [http://localhost:3000](http://localhost:3000).
 
 5. **FOR DOCKER**
-`docker pull safallama/weathwer-app`
-`docker run -p 3000:3000 -e REACT_APP_WEATHER_API_KEY=your_api_key_here safallama/weather-app`
+`docker pull safallama/weathwer-app:v1.0`
+`docker run -p 3000:3000 [id created]`
+`docker run -p 3000:3000 -e REACT_APP_WEATHER_API_KEY=your_api_key_here [id created]`
 
 ## Usage
 
